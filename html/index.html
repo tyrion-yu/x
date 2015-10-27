@@ -9,26 +9,17 @@
 <div class="wrapper">
     <section id="smb">
         <h2>Mac smb -> Windows</h2>
-        <input v-model="ipt" type="text" placeholder="smb://" /> <button id="btn-get-link">复制结果</button>
-        <p v-text="ret"></p>
+        <input v-model="ipt" type="text" placeholder="smb://" />
+        <button id="btn-get-link" data-clipboard-target="ret">复制结果</button>
+        <span v-text="msg"></span>
+        <p v-text="ret" id="ret"></p>
     </section>
 </div>
 
 <script src="../libs/jquery-2.1.4.js"></script>
+<script src="../libs/ZeroClipboard.min.js"></script>
 <script src="../libs/vue.js"></script>
-
-<script>
-    var smb = new Vue({
-        el: "#smb",
-        data: {
-            ipt: ''
-        },
-        computed: {
-            ret: function(){
-                return this.ipt.replace(/smb:/,'').replace(/\//g,'\\');
-            }
-        }
-    })
-</script>
+<script src="../js/common.js"></script>
+<script src="../js/smb.js"></script>
 </body>
 </html>
