@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>X by tyrion-yu</title>
+    <title>x</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    x
-  </body>
+    <link rel="stylesheet" href="http://7xn16e.com1.z0.glb.clouddn.com/css/index.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <section id="smb">
+        <h2>Mac smb -> Windows</h2>
+        <input v-model="ipt" type="text" placeholder="smb://" />
+        <button id="btn-get-link" data-clipboard-target="ret">复制结果</button>
+        <span v-text="msg"></span>
+        <p v-text="ret" id="ret"></p>
+    </section>
+</div>
+
+<script src="http://7xn16e.com1.z0.glb.clouddn.com/js/all.min.js"></script>
+
+</body>
 </html>
