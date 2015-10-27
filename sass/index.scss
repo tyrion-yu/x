@@ -1,0 +1,36 @@
+@import "reset";
+
+.wrapper {
+    max-width: 650px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 15px 0;
+}
+
+section + section {
+    border-top: 1px solid #eee;
+}
+
+input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0 5px;
+    line-height: 21px;
+}
+
+p {
+    margin: 10px 0 15px;
+}
+
+#smb {
+    input {
+        margin-right: 5px;
+    }
+}
