@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas 图片剪裁</title>
+    <link rel="stylesheet" href="../css/clip/index.css">
+</head>
+<body>
+<div class="wrap">
+    <h3 class="header">上传图片</h3>
+    <div class="edit-area clearfix">
+        <div class="left">
+            <div class="choose-pic">
+                <div class="drag-and-drop">
+                    <a class="ui-btn" href="#"><em>+</em>点击选择图片</a>
+                    <input type="file">
+                    <p>或将照片拖到这里</p>
+                </div>
+            </div>
+            <div class="edit-pic Hide">
+                <i></i><span class="canvas-wrap"><span class="mask"><canvas class="clip"></canvas></span><canvas class="img"></canvas></span>
+            </div>
+
+            <div class="btn-op-group Hide">
+                <a class="ui-btn" action-type="back" href="#">重新选择</a>
+                <a class="ui-btn" action-type="rotate" href="#">90°旋转</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="preview-box">
+                <span>预览</span>
+                <div class="canvas-wrap">
+                    <canvas class="preview" width="120" height="120"></canvas>
+                    <p>暂无预览</p>
+                </div>
+                <p>120px x 120px</p>
+            </div>
+        </div>
+    </div>
+    <div class="btn-group">
+        <a class="ui-btn ui-btn-main" href="#">确定</a>
+    </div>
+</div>
+
+<p class="copyright">高仿新浪微博图片剪裁 基于canvas<br>
+tianlin.yu@dianping.com</p>
+<script src="../js/common/jquery-1.11.3.js"></script>
+<script src="../js/homeevent/crop.js"></script>
+</body>
+</html>

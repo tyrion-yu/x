@@ -1,0 +1,280 @@
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+label {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+:focus {
+  outline: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Microsoft YaHei", '黑体', '宋体', Arial;
+  font-size: 12px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: none;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+  border: none;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+i,
+em {
+  font-style: normal;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+.Hide {
+  display: none !important;
+}
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.col,
+.btn-VerifyCode {
+  vertical-align: bottom;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.row {
+  display: block;
+}
+.row + .row {
+  margin-top: 10px;
+}
+.oh {
+  overflow: hidden;
+}
+.text-overflow {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-VerifyCode {
+  text-align: center;
+  color: #666;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 2px;
+}
+.btn-VerifyCode:hover {
+  color: #666;
+}
+.btn-VerifyCode.disabled {
+  color: #c1c1c1;
+  background: #f7f7f7;
+}
+body {
+  background: #353535;
+}
+img {
+  display: none;
+}
+.ui-btn {
+  display: inline-block;
+  padding: 0 10px;
+  color: #333;
+  height: 24px;
+  line-height: 25px;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.ui-btn:hover {
+  border-color: #cccccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.ui-btn.ui-btn-main {
+  height: 34px;
+  min-width: 40px;
+  padding: 0 15px;
+  line-height: 35px;
+  color: #fff;
+  font-size: 14px;
+  background: #ff8140;
+  border-color: #f77c3d;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.ui-btn.ui-btn-main:hover {
+  background: #f7671d;
+  border: 1px solid #f06923;
+}
+.wrap {
+  width: 560px;
+  margin: 30px auto;
+  background: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.wrap .header {
+  padding: 0 0 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 38px;
+  border-bottom: 1px solid #f2f2f5;
+}
+.wrap .edit-area {
+  padding: 16px;
+}
+.wrap .left {
+  width: 360px;
+  float: left;
+}
+.wrap .choose-pic {
+  text-align: center;
+  height: 330px;
+  padding: 15px;
+  background: #f2f2f5;
+}
+.wrap .choose-pic a {
+  position: relative;
+  overflow: hidden;
+  margin: 122px 0 10px;
+}
+.wrap .choose-pic a em {
+  margin-right: 5px;
+  font-family: serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #f06923;
+}
+.wrap .choose-pic input {
+  display: none;
+}
+.wrap .drag-and-drop {
+  height: 326px;
+  border: 3px dashed #e6e6e6;
+}
+.wrap .edit-pic {
+  height: 360px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background: #333;
+}
+.wrap .edit-pic i {
+  display: inline-block;
+  width: 0;
+  height: 360px;
+  vertical-align: middle;
+}
+.wrap .edit-pic .canvas-wrap,
+.wrap .edit-pic .img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrap .edit-pic .canvas-wrap {
+  position: relative;
+}
+.wrap .edit-pic .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrap .btn-op-group {
+  padding: 10px 0;
+}
+.wrap .btn-op-group .ui-btn + .ui-btn {
+  float: right;
+}
+.wrap .right {
+  float: right;
+  width: 152px;
+}
+.wrap .right .canvas-wrap {
+  position: relative;
+  margin: 5px 0;
+  line-height: 120px;
+}
+.wrap .right .canvas-wrap canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrap .preview-box {
+  padding: 16px;
+  background: #f2f2f5;
+}
+.wrap .btn-group {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #f2f2f5;
+}
+.wrap p {
+  color: #808080;
+  text-align: center;
+}
+.copyright {
+  text-align: center;
+  color: #C5C5C5;
+  text-shadow: 0 2px 1px #000000;
+}
